@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Pug - #{login}
+  body
+    a(href='/') Home
+    h3 Login
+    form(action="/login", method="post")
+      div
+        label(for="email") Email:
+        input(type='text', placeholder='email')
+      div
+        label(for="pwd") Password:
+        input(type='password', placeholder='password')
+
+      button(type="submit") Sign in
+
+    p: a(href='/reset-password') Forgot your password?
+    p: a(href='/register') Register
